@@ -23,7 +23,7 @@ p{
     margin: 10px 0;
 }
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 /*utility classes*/
 .container{
@@ -38,6 +38,22 @@ section{
     padding: 13px 20px;
     border: none;
     cursor: pointer;    
+}
+.ordernow.btnwhite{
+    display: flex;
+    color: #FFF;
+    font-size: 14px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    padding: 5px 30px;
+}
+.ordernow.btnblack{
+    display: flex;
+    color: #000;
+    font-size: 14px;
+    border: 3px solid #000;
+    border-radius: 25px;
+    padding: 5px 30px;
 }
 /*padding*/
 .py-1{
@@ -81,29 +97,58 @@ section{
     padding: 20px;
     text-align: center;
 }
-#navbar ul li a:hover, 
-#navbar ul li a.current{
-    /*background: #444;
-    color: #f7c08a;*/
-}
+
 #navbar .main{
     float: left;
 }
 #logo img{
-    max-width: 150px;
+    max-width: 100px;
 }
 #logo h1{
     padding: 15px;
-
 }
 #mainMenu{    
     list-style: inside;
 }
-#account{  
-    
+
+/**/
+.center-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:white;
+    font-size: 28px;
+    line-height: 36px;
+    bottom: 50px;
+    margin: 0px 0px 50px 0px;
 }
+  .callout-container{
+    width: 150px;
+    padding: 0 15px;
+  }
+  .callout-container p{
+    font-size:14px;
+  }
+.divider{
+    border-right: 1px solid #FFF;
+    float: left;
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFF;
+    height: 65px;
+}
+.with-callouts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 90vh;
+}
+/**/
 
 /*pages*/
+/*Muodel 3*/
 #model-3{
     background: url('../img/model-3-hero-desktop.jpg') no-repeat center center/cover;
     width: 100%;
@@ -116,23 +161,335 @@ section{
     text-align: center;
     color: white;
     overflow: hidden;
+    line-height: 48px;
 }
-#safety{
-    background: url('../img/model_3_safety_hero.png') no-repeat center center/cover;
-    width: 100%;
+
+#model-3 .center-bottom{
+    text-align: center;
+    top: 380px;
 }
+#model-3 .toReavel{
+    float: left;
+    text-align: center;
+    font-size: 28px;   
+    line-height: 36px;
+    color: #FFF;
+    height: 65px;    
+}
+#model-3 .animated{
+    padding: 0 20px;
+}
+/*#model-3 .center-bottom .center-with-buttons .divider{
+    border-right: 1px solid #FFF;
+}*/
+.center-with-buttons{
+    display: inline-block;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto; 
+}
+
+.dailIcon{
+    float: left;
+}
+.callout-container p{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.toReavel .animated .with-btn{
+    padding-top: 10px;
+}
+
+ 
+
+/*Safety*/
+.flex-container-safety{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+  }
+  .safety.left_container-content{
+    width:22%;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    padding: 5px 30px;
+  }
+  .subject-description .subject h2{
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .subject-description .subject h1{
+    font-size: 28px;  
+    font-weight: lighter;
+  }
+  .safety.right_container-image{
+    display: flex;
+    width: 80%;
+  }
+  #sb-right{
+      width:100%;
+      height: 100%;
+  }
+  .banner-buttons{
+    display:flex;
+    justify-content: space-between;
+    bottom: 150px;
+    margin: 0px 0px 20px 0px;
+  }
+  .plus-icon{
+    width:40px;
+    height:40px;
+    border: 5px solid #000;
+    border-radius:50%
+  }
+  .banner-ordernow-icons h4{
+    padding: 10px 10px
+  }
+  .banner-ordernow-icons{
+    display: flex;
+    cursor: pointer;
+  }
+  .banner-animations{
+    position: absolute;
+  }
+
+
+
+/*Performance*/
 #performance{
-    background: url('../img/lhd-performance-hero-desktop.jpg') no-repeat center center/cover;
+    background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop')  no-repeat center top;
     width: 100%;
+    background-size: 100% 70%;
+    display: flex;
+    align-items: flex-start;
 }
+.performance.right_container-image .callout-container{
+    width: 320px;
+  }
+.flex-container-performance{
+    display: flex;
+    flex-flow: nowrap column-reverse;
+    align-items:center;
+    justify-content: space-between;
+    height: 100vh;;
+}
+  .performance.left_container-content{
+    width:50%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    padding: 25px 30px;
+    height: 30%;
+  }
+  .subject-description{
+    display: flex;
+    flex-direction: column;
+    min-width: 314px;
+    padding-right: 20px;
+  }
+  #performance .subject-description .subject h2{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .subject-description .subject h1{
+    font-size: 17px;  
+    font-weight: 500;
+    line-height: 17px;
+  }
+  .performance.right_container-image{
+    display: flex;
+    height: 90%;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  #sb-right{
+      width:100%;
+      height: 100%;
+  }
+  .banner-buttons{
+    display:flex;
+    justify-content: space-between;
+    bottom: 150px;
+    margin: 0px 0px 20px 0px;
+  }
+  .plus-icon{
+    width:40px;
+    height:40px;
+    border: 5px solid #000;
+    border-radius:50%
+  }
+  .banner-ordernow-icons h4{
+    padding: 10px 10px
+  }
+  .banner-ordernow-icons{
+    display: flex;
+    cursor: pointer;
+  }
+  .banner-animations{
+    position: absolute;
+  }
+.performance-banner{
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+/*all-wheeldrive*/
 #all-wheeldrive{
-    background: url('../img/lhd-awd-hero-desktop.jpg') no-repeat center center/cover;
+    background: url('../img/lhd-awd-hero-desktop.jpg')  no-repeat center top;
     width: 100%;
+    background-size: 100% 70%;
+    display: flex;
+    align-items: flex-start;
 }
-#range{
+.all-wheeldrive.right_container-image .callout-container{
+    width: 270px;
+  }
+.flex-container-all-wheeldrive{
+    display: flex;
+    flex-flow: nowrap column-reverse;
+    align-items:center;
+    justify-content: space-between;
+    height: 100vh;;
+}
+  .all-wheeldrive.left_container-content{
+    width:50%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    padding: 25px 30px;
+    height: 30%;
+  }
+  .subject-description{
+    display: flex;
+    flex-direction: column;
+    min-width: 314px;
+    padding-right: 20px;
+  }
+  #all-wheeldrive .subject-description .subject h2{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .subject-description .subject h1{
+    font-size: 17px;  
+    font-weight: 500;
+    line-height: 17px;
+  }
+  .all-wheeldrive.right_container-image{
+    display: flex;
+    height: 90%;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  #sb-right{
+      width:100%;
+      height: 100%;
+  }
+  .banner-buttons{
+    display:flex;
+    justify-content: space-between;
+    bottom: 150px;
+    margin: 0px 0px 20px 0px;
+  }
+  .plus-icon{
+    width:40px;
+    height:40px;
+    border: 5px solid #000;
+    border-radius:50%
+  }
+  .banner-ordernow-icons h4{
+    padding: 10px 10px
+  }
+  .banner-ordernow-icons{
+    display: flex;
+    cursor: pointer;
+  }
+  .banner-animations{
+    position: absolute;
+  }
+.all-wheeldrive-banner{
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+.all-wheeldrive .callout-container.right img{
+    width: 30px;
+}
+
+/*range*/
+.range.right_container-image{
     background: url('../img/lhd-range-hero-desktop.jpg') no-repeat center center/cover;
     width: 100%;
 }
+.flex-container-range{
+    display: flex;
+    flex-flow: nowrap row-reverse;
+    justify-content: flex-start;
+  }
+  .range.left_container-content{
+    width:22%;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    padding: 5px 30px;
+  }
+  .subject-description .subject h2{
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .subject-description .subject h1{
+    font-size: 28px;  
+    font-weight: lighter;
+  }
+  .range.right_container-image{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .range-banner{
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  #rb-right{
+      width:100%;
+      height: 100%;
+  }
+  .banner-buttons{
+    display:flex;
+    justify-content: space-between;
+    bottom: 150px;
+    margin: 0px 0px 20px 0px;
+  }
+  .plus-icon{
+    width:40px;
+    height:40px;
+    border: 5px solid #000;
+    border-radius:50%
+  }
+  .banner-ordernow-icons h4{
+    padding: 10px 10px
+  }
+  .banner-ordernow-icons{
+    display: flex;
+    cursor: pointer;
+  }
+  .banner-animations{
+    position: absolute;
+  }
+#range .callout-container{
+    width: 240px;
+}
+
+
+
+/*autopilot*/
 #autopilot{
     background: url('../img/lhd-awd-hero-desktop.jpg') no-repeat center center/cover;
     width: 100%;
