@@ -102,7 +102,7 @@ section{
 }
 #logo img{
     max-width: 100px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 #logo h1{
     padding: 15px;
@@ -181,6 +181,7 @@ section{
     font-size: 25px;
     line-height: 21px;
 }
+
 /*pages*/
 /*Muodel 3*/
 #model-3{
